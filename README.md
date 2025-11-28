@@ -16,7 +16,7 @@ Saving the best evolved model (best_tree.pk5)
 
 Pre-processing and cleaning of the numeric dataset
 
-🚀 Project Overview
+Project Overview
 
 Genetic Programming (GP) is used to evolve symbolic mathematical expressions that can predict the target CPU performance using features extracted from a dataset (227Dataset.xlsx).
 
@@ -37,29 +37,3 @@ Point mutation
 Depth-bounded random tree generation
 
 The best evolved model is saved using pickle for reuse or transfer learning.
-
-📂 Dataset
-
-File: 227Dataset.xlsx
-
-The dataset contains numeric CPU performance features, including:
-
-lwrite
-
-lread
-
-Additional numeric predictors
-
-target (regression label)
-
-Preprocessing Steps
-
-The code performs:
-
-Replacement of zeros in lwrite and lread with column medians
-
-Removal of duplicated rows
-
-Shuffling the dataset
-
-Splitting into 80% training, 20% testing
